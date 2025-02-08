@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Soins d'Eva - Soins Facialistes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <!-- En-tête -->
+    <header class="header">
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Icône burger -->
+        </div>
+        <div class="banner">
+            <img src="images/background-image.png" alt="Bannière Les Soins d'Eva">
+        </div>     
+    </header>
+    
+    <nav class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos d'Eva</a></li>
+            <li class="dropdown">
+                <a href="lessoins.html" class="dropdown-link">Les Soins</a>
+                <span class="arrow">&#9662;</span>
+                <ul class="submenu">
+                    <li><a href="facialistev2.html">Soins Facialistes</a></li>
+                    <li><a href="corpsv2.html">Le Corps</a></li>
+                    <li><a href="cours.html">Cours et Protocoles</a></li>
+                </ul>
+            </li>
+                      
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><img src="images/logo-soleil.png" alt="Logo décoratif" class="method-logo2"></li>
+        </ul>
+    </nav>
+    
+    <main>
+
+            <!-- Titre centré -->
+        <h3 class="titre-soins">Soins Facialistes</h3>
+        <h3 class="sous-titre-soins">Soins exclusivement réservé aux femmes</h3>
+        <p class="explain-femme">J’ai choisi de réserver mes soins aux femmes afin de leur offrir un lieu où elles se sentent en sécurité, libres de lâcher prise et de se recentrer sur leur bien-être. Ici, tout est pensé pour votre détente, dans une atmosphère sereine et bienveillante.</p>
+        <h3 class="botox">POUR TOUS LES SOINS, EN CAS D’INJECTION DE BOTOX, ATTENDRE 10 JOURS APRÈS INJECTION.</h3>
+
+        <div class="bloc-container">
+            <!-- Bloc 1 -->
+            <div class="bloc soin">
+                <h1 class="titre-offre">Le Miracle Face</h1>
+                <h5 class="sous-titre-offre">Certifié Renata França</h5>
+                <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+                <div class="contenu-bloc">
+                    <p class="description">Drainage et remodelage du visage certifié Renata França</p>
+
+                    <div class="duree-prix">
+                        <h5 class="duree">60 min</h5>
+                        <h5 class="prix">80€</h5>
+                    </div>
+
+                    <div class="reservation-btn">
+                        <button class="btn-reserver" 
+                            data-soin="Le Miracle Face" 
+                            data-duree="60 min" 
+                            data-prix="80€">
+                            RÉSERVER
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="fleche"></div> <!-- Flèche ajoutée -->
+            </div>
+
+            <!-- Bloc 1-2 -->
+            <div class="bloc soin">
+                <h1 class="titre-offre">Le Miracle Face - La Cure</h1>
+                <h5 class="sous-titre-offre">Certifié Renata França</h5>
+                <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+                <div class="contenu-bloc">
+                    <p class="description">Drainage et remodelage du visage certifié Renata França</p>
+
+                    <div class="duree-prix">
+                        <h5 class="duree">Cure (5 séances)</h5>
+                        <h5 class="prix">350€</h5>
+                    </div>
+
+                    <div class="reservation-btn">
+                        <button class="btn-reserver" 
+                            data-soin="Le Miracle Face - La Cure" 
+                            data-duree="5 séances" 
+                            data-prix="350€">
+                            RÉSERVER
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="fleche"></div> <!-- Flèche ajoutée -->
+            </div>
+
+
+            <!-- Bloc 2 -->
+            <div class="bloc soin">
+                <h1 class="titre-offre">Face Lift</h1>
+                <h5 class="sous-titre-offre">Face-lift Massage Intra-Buccal</h5>
+                <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+                <div class="contenu-bloc">
+                    <p class="description-face">Idéal pour ceux qui recherchent un lifting naturel, sans chirurgie ni produits injectables, ce massage agit sur les muscles profonds pour raffermir et redessiner les contours du visage. Il permet un travail ciblé et en profondeur, offrant un accès unique aux muscles généralement inaccessibles par un massage externe classique.</p>
+                    <div class="duree-prix">
+                        <h5 class="duree">30 min</h5>
+                        <h5 class="prix">90€</h5>
+                    </div>
+
+                    <div class="reservation-btn">
+                        <button class="btn-reserver" 
+                            data-soin="Face Lift" 
+                            data-duree="30mc" 
+                            data-prix="90€">
+                            RÉSERVER
+                        </button>
+                    </div>
+
+                </div>
+                <div class="fleche"></div> <!-- Flèche ajoutée -->
+            </div>
+
+            <!-- Bloc 3 -->
+            <div class="bloc soin">
+                <h1 class="titre-offre-better">Le Soin Better Aging</h1>
+                <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+                <div class="contenu-bloc">
+                    <p class="description">Le meilleur des manœuvres du Miracle Face, reconnu pour ses effets immédiats grâce à la combinaison de drainage lymphatique, de modelage liftant et de détente musculaire, offrant des bienfaits à la fois esthétiques et thérapeutiques, est associé au Face-Lift Massage Intra-Buccal. Ce dernier permet un travail en profondeur, ciblant les rides de l'intérieur pour des résultats visibles et durables.</p>
+                    <div class="duree-prix">
+                        <h5 class="duree">1 heure</h5>
+                        <h5 class="prix">120€</h5>
+                    </div>
+
+                    <div class="reservation-btn">
+                        <button class="btn-reserver" 
+                            data-soin="Le Soin Better Aging" 
+                            data-duree="1 heure" 
+                            data-prix="120€">
+                            RÉSERVER
+                        </button>
+                    </div>
+
+                </div>
+                <div class="fleche"></div> <!-- Flèche ajoutée -->
+            </div>
+
+            <!-- Bloc 4 -->
+            <div class="bloc soin">
+                <h1 class="titre-offre">Le Soin Better Aging</h1>
+                <h5 class="sous-titre-offre">Expert</h5>
+                <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+                <div class="contenu-bloc">
+                    <p class="description-better-expert">Un soin facialiste d'excellence</p>
+                    <p class="description">Une heure de Miracle Face associée à 30 minutes de Facelift, pour des résultats visibles et durables, et un visage transformé.</p>
+                    <div class="duree-prix">
+                        <h5 class="duree">1 heure 30 min</h5>
+                        <h5 class="prix">150€</h5>
+                    </div>
+                    
+                    <div class="reservation-btn">
+                        <button class="btn-reserver" 
+                            data-soin="Le Soin Better Aging - Expert" 
+                            data-duree="1 heure 30 min" 
+                            data-prix="150€">
+                            RÉSERVER
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="fleche"></div> <!-- Flèche ajoutée -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo-pied">
+                <img src="images/soleil-dore.png" alt="Logo demi soleil doré" class="logodore">
+            </div>
+            <div class="mentions-legales">
+                <a href="mentions-legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-facialiste.js"></script>
+    <script src="soins.js"></script>
+    <script src="header.js"></script>
+
+</body>
+</html>

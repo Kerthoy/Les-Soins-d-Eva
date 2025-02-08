@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Soins d'Eva - Soins Corps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- En-tête -->
+    <header class="header">
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Icône burger -->
+        </div>
+        <div class="banner">
+            <img src="images/background-image.png" alt="Bannière Les Soins d'Eva">
+        </div>     
+    </header>
+    
+    <nav class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos d'Eva</a></li>
+            <li class="dropdown">
+                <a href="lessoins.html" class="dropdown-link">Les Soins</a>
+                <span class="arrow">&#9662;</span>
+                <ul class="submenu">
+                    <li><a href="facialistev2.html">Soins Facialistes</a></li>
+                    <li><a href="corpsv2.html">Le Corps</a></li>
+                    <li><a href="cours.html">Cours et Protocoles</a></li>
+                </ul>
+            </li>
+                      
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><img src="images/logo-soleil.png" alt="Logo décoratif" class="method-logo2"></li>
+        </ul>
+    </nav>
+
+
+    <!-- Titre centré -->
+    <h3 class="titre-soins">Cours et Protocoles</h3>
+    <h3 class="sous-titre-soins">TECHNIQUE EXCLUSIVE SYLVIE LEFRANC</h3>
+    <p class="explain-cours">Après un diagnostic visage et écoute de vos attentes, nous allons mettre en place un protocole adapté de yoga facial ou d'auto massage. Le fait d'apprendre un protocole à intégrer dans sa routine, permet d’entretenir de manière autonome son visage. À la clé, des rides diminuées, un visage détendu et repulpé.</p>
+
+    <div class="bloc-container">
+        <!-- Bloc 1 -->
+        <div class="bloc soin">
+            <h1 class="titre-offre">Le cours personnalisé</h1>
+            <h5 class="sous-titre-offre">Yoga Facial</h5>
+            <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+            <div class="contenu-bloc">
+                <p class="description-yoga">Je vous propose un cours personnalisé, adapté à la morphologie unique de votre visage et à vos objectifs spécifiques. Ensemble, nous pratiquerons des exercices ciblés que vous pourrez facilement intégrer dans votre routine quotidienne pour des résultats durables et efficaces.</p>
+
+                <div class="duree-prix">
+                    <h5 class="duree">1 heure</h5>
+                    <h5 class="prix">70€</h5>
+                </div>
+
+                <div class="reservation-btn">
+                    <button class="btn-reserver" 
+                        data-soin="Yogal Facial" 
+                        data-duree="1 heure" 
+                        data-prix="70€">
+                        RÉSERVER
+                    </button>
+                </div>
+
+            </div>
+            <div class="fleche"></div> <!-- Flèche ajoutée -->
+        </div>
+
+
+        <!-- Bloc 2 -->
+        <div class="bloc soin">
+            <h1 class="titre-offre">Le cours personnalisé</h1>
+            <h5 class="sous-titre-offre">Auto Massage</h5>
+            <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+            <div class="contenu-bloc">
+                <p class="description">Je vous propose un cours personnalisé pour apprendre à masser correctement votre visage. Une pratique régulière et maîtrisée a un véritable impact sur l'état de la peau. Lors de cette séance, vous serez également initié (e) à l'utilisation d'outils tels que le gua sha et le massage intra-buccal pour optimiser les résultats.</p>
+
+                <div class="duree-prix">
+                    <h5 class="duree">1 heure</h5>
+                    <h5 class="prix">70€</h5>
+                </div>
+
+                <div class="reservation-btn">
+                    <button class="btn-reserver" 
+                        data-soin="Auto Massage" 
+                        data-duree="1 heure" 
+                        data-prix="70€">
+                        RÉSERVER
+                    </button>
+                </div>
+
+            </div>
+            <div class="fleche"></div> <!-- Flèche ajoutée -->
+        </div>
+
+    </div>
+</main>
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo-pied">
+                <img src="images/soleil-dore.png" alt="Logo demi soleil doré" class="logodore">
+            </div>
+            <div class="mentions-legales">
+                <a href="mentions-legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-facialiste.js"></script>
+    <script src="soins.js"></script>
+    <script src="header.js"></script>
+
+</body>
+</html>

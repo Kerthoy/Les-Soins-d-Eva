@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Soins d'Eva - Soins Corps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- En-tête -->
+    <header class="header">
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Icône burger -->
+        </div>
+        <div class="banner">
+            <img src="images/background-image.png" alt="Bannière Les Soins d'Eva">
+        </div>     
+    </header>
+    
+    <nav class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos d'Eva</a></li>
+            <li class="dropdown">
+                <a href="lessoins.html" class="dropdown-link">Les Soins</a>
+                <span class="arrow">&#9662;</span>
+                <ul class="submenu">
+                    <li><a href="facialistev2.html">Soins Facialistes</a></li>
+                    <li><a href="corpsv2.html">Le Corps</a></li>
+                    <li><a href="cours.html">Cours et Protocoles</a></li>
+                </ul>
+            </li>
+                      
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><img src="images/logo-soleil.png" alt="Logo décoratif" class="method-logo2"></li>
+        </ul>
+    </nav>
+
+    <!-- Titre centré -->
+    <h3 class="titre-soins">Le Corps</h3>
+    <h3 class="sous-titre-soins">Soins exclusivement réservé aux femmes</h3>
+    <p class="explain-femme">J’ai choisi de réserver mes soins aux femmes afin de leur offrir un lieu où elles se sentent en sécurité, libres de lâcher prise et de se recentrer sur leur bien-être. Ici, tout est pensé pour votre détente, dans une atmosphère sereine et bienveillante.</p>
+    <h3 class="botox">POUR TOUS LES SOINS, EN CAS D’INJECTION DE BOTOX, ATTENDRE 10 JOURS APRÈS INJECTION.</h3>
+
+    <div class="bloc-container">
+
+        <!-- Bloc 1 -->
+        <div class="bloc soin">
+            <h1 class="titre-offre">DRAINAGE LYMPHATIQUE</h1>
+            <h5 class="sous-titre-offre">Certifié Renata França</h5>
+            <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+            <div class="contenu-bloc">
+                <p class="description">Protocole exclusif de Drainage lymphatique</p>
+
+                <div class="duree-prix">
+                    <h5 class="duree">60 min</h5>
+                    <h5 class="prix">150€</h5>
+                </div>
+
+                <div class="reservation-btn">
+                    <button class="btn-reserver" 
+                        data-soin="Drainage Lymphatique" 
+                        data-duree="60 min" 
+                        data-prix="150€">
+                        RÉSERVER
+                    </button>
+                </div>
+
+            </div>
+            <div class="fleche"></div> <!-- Flèche ajoutée -->
+        </div>
+
+        <!-- Bloc 1-2 -->
+        <div class="bloc soin">
+            <h1 class="titre-offre">DRAINAGE LYMPHATIQUE - La Cure</h1>
+            <h5 class="sous-titre-offre">Certifié Renata França</h5>
+            <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+            <div class="contenu-bloc">
+                <p class="description">Protocole exclusif de Drainage lymphatique sur 5 séances.</p>
+
+                <div class="duree-prix">
+                    <h5 class="duree">Cure (5 séances)</h5>
+                    <h5 class="prix">600€</h5>
+                </div>
+
+                <div class="reservation-btn">
+                    <button class="btn-reserver" 
+                        data-soin="Drainage Lymphatique - La Cure" 
+                        data-duree="5 séances" 
+                        data-prix="600€">
+                        RÉSERVER
+                    </button>
+                </div>
+
+            </div>
+            <div class="fleche"></div> <!-- Flèche ajoutée -->
+        </div>
+
+
+        <!-- Bloc 2 -->
+        <div class="bloc soin">
+            <h1 class="titre-offre">MASSAGE RELAXANT</h1>
+            <h5 class="sous-titre-offre">Le Lomi Lomi Hawa</h5>
+            <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+            <div class="contenu-bloc">
+                <p class="description">Le <span class="massage">LOMI LOMI HAWA</span> est une des formes les plus anciennes et les plus puissantes de guérison et de relaxation.</p>
+
+                <div class="duree-prix">
+                    <h5 class="duree">60 min</h5>
+                    <h5 class="prix">90€</h5>
+                </div>
+
+                <div class="reservation-btn">
+                    <button class="btn-reserver" 
+                        data-soin="Massage Relaxant" 
+                        data-duree="60 min" 
+                        data-prix="90€">
+                        RÉSERVER
+                    </button>
+                </div>
+
+            </div>
+            <div class="fleche"></div> <!-- Flèche ajoutée -->
+        </div>
+
+        <!-- Bloc 2-2 -->
+        <div class="bloc soin">
+            <h1 class="titre-offre">MASSAGE RELAXANT - Complet</h1>
+            <h5 class="sous-titre-offre">Le Lomi Lomi Hawa</h5>
+            <img src="images/soleil-blanc.png" alt="Logo Soleil Blanc" class="logo-soleil-bloc">
+            <div class="contenu-bloc">
+                <p class="description">Le <span class="massage">LOMI LOMI HAWA</span> est une des formes les plus anciennes et les plus puissantes de guérison et de relaxation.</p>
+
+                <div class="duree-prix">
+                    <h5 class="duree">90 min</h5>
+                    <h5 class="prix">150€</h5>
+                </div>
+
+                <div class="reservation-btn">
+                    <button class="btn-reserver" 
+                        data-soin="Massage Relaxant - Complet" 
+                        data-duree="90 min" 
+                        data-prix="150€">
+                        RÉSERVER
+                    </button>
+                </div>
+
+            </div>
+            <div class="fleche"></div> <!-- Flèche ajoutée -->
+        </div>
+
+    </div>
+</main>
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo-pied">
+                <img src="images/soleil-dore.png" alt="Logo demi soleil doré" class="logodore">
+            </div>
+            <div class="mentions-legales">
+                <a href="mentions-legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-facialiste.js"></script>
+    <script src="soins.js"></script>
+    <script src="header.js"></script>
+
+</body>
+</html>

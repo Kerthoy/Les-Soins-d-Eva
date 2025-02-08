@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Soins d'Eva - Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- En-tête -->
+    <header class="header">
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Icône burger -->
+        </div>
+        <div class="banner">
+            <img src="images/background-image.png" alt="Bannière Les Soins d'Eva">
+        </div>     
+    </header>
+    
+    <nav class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos d'Eva</a></li>
+            <li class="dropdown">
+                <a href="lessoins.html" class="dropdown-link">Les Soins</a>
+                <span class="arrow">&#9662;</span>
+                <ul class="submenu">
+                    <li><a href="facialistev2.html">Soins Facialistes</a></li>
+                    <li><a href="corpsv2.html">Le Corps</a></li>
+                    <li><a href="cours.html">Cours et Protocoles</a></li>
+                </ul>
+            </li>
+                      
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><img src="images/logo-soleil.png" alt="Logo décoratif" class="method-logo2"></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+
+        <!-- BLOC 1 : Informations du client -->
+        <div class="bloc1">
+            <h2 class="titleform">Informations du client</h2>
+            <div class="line" style="display: flex; justify-content: space-between;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <label for="nomPrenom">Nom et Prénom *</label>
+                    <input type="text" id="nomPrenom" name="nomPrenom" required>
+                </div>
+                <div style="flex: 1;">
+                    <label for="email">Adresse mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="line">
+                <label for="phone">Numéro de téléphone *</label>
+                <div style="display: flex; align-items: center;">
+                    <select id="indicatif" name="indicatif" class="indicatif">
+                        <option value="+33">+33</option>
+                        <option value="+1">+1</option> <!-- Etats-Unis -->
+                        <option value="+44">+44</option> <!-- Royaume-Uni -->    
+                        <option value="+32">+32</option> <!-- Belgique -->
+                        <option value="+49">+49</option> <!-- Allemagne -->
+                        <option value="+34">+34</option> <!-- Espagne -->
+                        <option value="+39">+39</option> <!-- Italie -->
+                        <option value="+41">+41</option> <!-- Suisse -->
+                        <option value="+31">+31</option> <!-- Pays-Bas -->
+                        <option value="+351">+351</option> <!-- Portugal -->
+                        <option value="+353">+353</option> <!-- Irlande -->
+                        <option value="+421">+421</option> <!-- Slovaquie -->
+                        <option value="+420">+420</option> <!-- République tchèque -->
+                        <option value="+48">+48</option> <!-- Pologne -->
+                        <option value="+36">+36</option> <!-- Hongrie -->
+                        <option value="+380">+380</option> <!-- Ukraine -->
+                        <option value="+40">+40</option> <!-- Roumanie -->
+                        <option value="+373">+373</option> <!-- Moldavie -->
+                        <option value="+45">+45</option> <!-- Danemark -->
+                        <option value="+47">+47</option> <!-- Norvège -->
+                        <option value="+46">+46</option> <!-- Suède -->
+                        <option value="+36">+36</option> <!-- Hongrie -->
+                        <option value="+386">+386</option> <!-- Slovénie -->
+                        <option value="+389">+389</option> <!-- Macédoine -->
+                        <option value="+381">+381</option> <!-- Serbie -->
+                        <option value="+385">+385</option> <!-- Croatie -->
+                        <option value="+380">+380</option> <!-- Ukraine -->
+                        <option value="+354">+354</option> <!-- Islande -->
+                        <option value="+372">+372</option> <!-- Estonie -->
+                        <option value="+370">+370</option> <!-- Lituanie -->
+                        <option value="+371">+371</option> <!-- Lettonie -->
+                        <option value="+372">+372</option> <!-- Estonie -->
+                        <option value="+375">+375</option> <!-- Biélorussie -->
+                        <option value="+7">+7</option> <!-- Russie / Kazakhstan -->
+                    </select>
+                    <input type="tel" id="phone" name="phone" class="phone-number" placeholder="0606060606">    
+                </div>
+            </div>
+            <div class="line">
+                <label for="infoComplementaires">Informations complémentaires</label>
+                <textarea id="infoComplementaires" name="infoComplementaires"></textarea>
+            </div>
+        </div>
+
+        <!-- BLOC 2 : Détail de la réservation -->
+        <div class="bloc2">
+            <h2>Détail de la réservation</h2>
+
+            <div class="line">
+                <h6 class="date">Date et Heure</h6>
+                <p id="date-value">Sélectionnez une date</p>
+            </div>
+
+            <hr class="separator">
+
+            <div class="line">
+                <h6 class="soin">Soin</h6>
+                <p id="soin-value">Sélectionnez un soin</p>
+                <div class="bloc-soin-selectionne" id="soins-supp-container" class="hidden">
+                </div>
+            </div>
+
+            <hr class="separator">
+
+            <div class="line">
+                <h6 class="prixdetail">Prix</h6>
+                <p id="prix-detail-value">--</p>
+                <div class="bloc-prix-selectionne" id="prix-supp-container" class="hidden">
+                </div>
+                <div class="bloc-prix-total" id="total-prix-container" class="hidden">
+                    <h6 class="prixdetail">Prix Total</h6>
+                    <p id="total-prix-value">--</p>
+                </div>     
+                <p id="paiement">Paiement par carte ou espèces.</p>           
+            </div>
+
+            <hr class="separator">
+
+            <div class="line">
+                <h6 class="lieu">Lieu</h6>
+                <p id="location-value">Sélectionnez un lieu</p>
+            </div>
+
+            <hr class="separator">
+
+            <div class="line">
+                <p class="engagement">En confirmant votre réservation, vous vous engagez à l'honorer.</p>
+            </div>
+
+            <div class="line">
+                <button class="btn-confirm" id="confirm-button" disabled>Confirmer</button>
+            </div>
+
+        </div>
+    </div>
+
+
+     <!-- Pied de page -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="logo-pied">
+                <img src="images/soleil-dore.png" alt="Logo demi soleil doré" class="logodore">
+            </div>
+            <div class="mentions-legales">
+                <a href="mentions-legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="form.js"></script>
+<script src="header.js"></script>
+
+    
+</body>
+</html>
