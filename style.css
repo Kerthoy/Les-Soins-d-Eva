@@ -61,7 +61,7 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
     body {
     max-width: 600px;
     }
@@ -227,7 +227,7 @@ p {
 }
 
 /* Responsive pour mobile */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .sidebar {
         width: 50%;
     }
@@ -315,9 +315,9 @@ p {
 }
 
 /* Responsive pour mobile */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
     .arrow {
-        margin-left: 110px;
+        margin-left: 200px;
     }
 }
 
@@ -343,7 +343,7 @@ p {
 }
 
 /* Responsive pour mobile */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
     .submenu li a {
         font-size: 15px;
     }
@@ -720,7 +720,7 @@ p {
 
 @media screen and (max-width: 600px) {
     .soins-images {
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -777,44 +777,53 @@ p {
 }
 
 /* Responsive */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .titre-section-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: center; 
+        justify-content: center; 
         text-align: center;
         width: 100%;
+        margin: 0 auto; 
     }
 
     .title1-container,
     .title2-container {
         display: flex;
-        justify-content: center;
+        justify-content: center; 
         align-items: center;
         gap: 10px;
-        flex-wrap: nowrap;
+        flex-wrap: wrap; 
         width: 100%;
+        margin: 0 auto; 
     }
 
     .title1-container p,
     .title2-container p {
         font-size: 18px;
-        white-space: nowrap;
+        white-space: nowrap; 
         text-align: center;
         flex-grow: 0;
+        margin: 0; 
     }
 
-    .logo-titre {
-        width: 30px;
+    .title1-container img,
+    .title2-container img {
+        width: 50px; 
     }
 
     .soins-links {
-        margin-left: 70px;
-        margin-top: -300px;
-        margin-bottom: 0px;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .soins-title {
+        margin-left: 0; 
     }
 }
+
 
 
 
@@ -839,9 +848,16 @@ p {
 }
 
 /* Responsive pour mobile */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
     .soins-logo {
-        visibility: hidden;
+        display: none; /* Supprime complètement l'élément du flux */
+    }
+
+    /* Ajustement de la mise en page après suppression du logo */
+    .some-parent-container {  
+        justify-content: center; /* Centre le reste du contenu */
+        margin-right: 0; /* Supprime la marge négative */
+        padding: 0 20px; /* Ajoute un padding pour éviter un vide */
     }
 }
 
@@ -1661,8 +1677,10 @@ p {
     }
 
     #calendar-container {
+        max-width: 600px;
         width: 80%;
         padding: 16px;
+        overflow: hidden;
     }
 
     #month-name {
